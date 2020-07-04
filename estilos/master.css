@@ -1,0 +1,93 @@
+
+:root{
+  /* Color */
+  --VerdeOscuro:#097238;
+  --VerdeClaro: #6DAC3B;
+  --Gris:#7F7F7F;
+  /* font */
+  --Font:'Rubik', sans-serif;
+}
+
+body{
+  font-family: var(--Font);
+  margin: 0;
+  padding: 0;
+}
+
+
+/* __________________Aqui comienza index */
+/* ________________ Aquí comienza nav */
+
+.Container-nav{
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: 10
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 40px;
+}
+
+nav img{
+  width: 100px;
+  cursor: pointer;
+}
+
+nav li{
+  display: flex;
+  color: var(--VerdeOscuro);
+  cursor: pointer;
+}
+
+/* ______________________Aquí comienza Hero */
+
+.hero img{
+  width: 100%;
+  position: absolute;
+  z-index: 1
+}
+
+.hero .style-hero{
+  position: absolute;
+  z-index: 2;
+  top: 350px;
+  left: 50px;
+}
+
+.hero .style-hero h1{
+  color: white;
+  margin-bottom: 0;
+  font-size: 5em;
+  font-weight: 700;
+}
+
+.hero .style-hero h3{
+  color: white;
+  margin-top: 0;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.hero .style-hero button{
+  font-family: var(--Font);
+  background-color: var(--VerdeClaro);
+  padding: 10px 60px;
+  font-size: 1.2em;
+  color: white;
+  border-radius: 5px;
+  border: none;
+}
+
+.hero .style-hero .style-hero-bottom{
+  display: flex;
+}
+
+.hero .style-hero .style-hero-bottom hr{
+  transform: rotate(90deg);
+  /* color: white; */
+  border-top: 1px solid white;
+}
