@@ -193,3 +193,135 @@ nav li{
   grid-area: picture-somos-home;
   width: 100%;
 }
+
+footer hr{
+  border: none;
+  border-left: 1px solid white;
+  height: 80px;
+  margin: auto;
+}
+.footer-grisoscuro{
+  margin-top: 100px;
+  background-color: var(--GrisOscuro);
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-logonexo{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-logonexo img{
+  width: 200px;
+  height: 99px;
+  margin-right: 40px;
+}
+
+.footer-logonexo button{
+  width: 150px;
+  font-family: var(--Font);
+  background-color: var(--VerdeClaro);
+  padding: 8px 20px;
+  font-size: 1em;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin: auto;
+  cursor: pointer;
+}
+
+.footer-menu{
+  margin: auto;
+}
+
+.footer-menu li{
+  list-style: none;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-menu li ul{
+  padding: 0;
+  cursor: pointer;
+}
+
+.footer-contact{
+  width: 600px;
+  display: grid;
+  grid-template: 40px 40px 40px / 40px 2fr 2fr;
+  grid-template-areas: "flaticon-telephone footer-celular footer-fijo"
+                        "flaticon-placeholder footer-adress footer-adress"
+                        "flaticon-arroba footer-email footer-button-contact";
+  margin: auto;
+  padding: 20px 0;
+}
+.flaticon-telephone{
+  grid-area: flaticon-telephone;
+  color: var(--VerdeClaro);
+  margin: auto;
+}
+
+.footer-celular{
+  grid-area: footer-celular;
+}
+
+.footer-fijo{
+  grid-area: footer-fijo;
+}
+
+.flaticon-placeholder{
+  grid-area: flaticon-placeholder;
+  color: var(--VerdeClaro);
+  margin: auto;
+}
+
+.footer-adress{
+  grid-area: footer-adress;
+}
+
+.flaticon-arroba{
+  grid-area: flaticon-arroba;
+  color: var(--VerdeClaro);
+  margin: auto;
+}
+
+
+.footer-email{
+  grid-area: footer-email;
+}
+
+.footer-button-contact{
+  grid-area: footer-button-contact;
+}
+
+.footer-contact h3 {
+  color: white ;
+  font-weight:400;
+  font-size: 1em;
+  margin: auto;
+  margin-left: 10px;
+}
+
+.footer-contact button{
+  width: 150px;
+  font-family: var(--Font);
+  background-color: var(--VerdeClaro);
+  padding: 8px 20px;
+  font-size: 1em;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin: auto;
+  cursor: pointer;
+}
+
+.footer-grisclaro{
+  background-color: var(--Gris);
+  text-align: center;
+  margin: 0;
+  padding: 7px 0;
+}
