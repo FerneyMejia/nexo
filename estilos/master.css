@@ -4,6 +4,7 @@
   --VerdeOscuro:#097238;
   --VerdeClaro: #6DAC3B;
   --Gris:#7F7F7F;
+  --GrisOscuro:#3f3f3f;
   /* font */
   --Font:'Rubik', sans-serif;
 }
@@ -76,18 +77,119 @@ nav li{
   font-family: var(--Font);
   background-color: var(--VerdeClaro);
   padding: 10px 60px;
-  font-size: 1.2em;
+  font-size: 1em;
   color: white;
   border-radius: 5px;
   border: none;
 }
 
 .hero .style-hero .style-hero-bottom{
-  display: flex;
+  display: grid;
+  grid-template-columns: .3fr 2fr 2fr;
+  grid-template-rows: 10px;
+  align-items: center;
+  margin-top: 40px;
 }
 
-.hero .style-hero .style-hero-bottom hr{
+.hero .style-hero .style-hero-bottom .linea-izquierda{
   transform: rotate(90deg);
-  /* color: white; */
-  border-top: 1px solid white;
+  width:  1px;
+  border: none;
+  background-color: white;
+  height: 2em;
+}
+
+.hero .style-hero .style-hero-bottom .linea-derecha{
+  transform: rotate(90deg);
+  width:  1px;
+  border: none;
+  background-color: white;
+  height: 13em;
+}
+
+.hero .style-hero .style-hero-bottom h5{
+  color: white;
+  font-weight: 200;
+  font-size: 1em;
+  padding: 10px;
+}
+
+.space-hero{
+  height: 800px;
+}
+.Title-Servic{
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 3em;
+  color: var(--VerdeOscuro);
+}
+
+.container-service-home{
+  display: flex;
+  width: 70%;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.container-service-home .service-home{
+  text-align: center;
+}
+
+.container-service-home .service-home h1{
+  font-size: 1em;
+  font-weight: 400;
+  color: var(--GrisOscuro);
+}
+
+.container-banner-home img{
+  width: 100%;
+  margin-top: 100px;
+}
+
+.container-somos-home{
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template: 2fr 2fr 1fr / 2fr 1fr 2fr;
+  grid-template-areas: "title-somos-home . picture-somos-home"
+                        "description-somos-home . picture-somos-home"
+                        "button-somos-home-home . picture-somos-home";
+  /* grid-gap: 40px; */
+  margin-top: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.title-somos-home{
+  grid-area: title-somos-home;
+  margin: auto;
+}
+
+.description-somos-home{
+  grid-area: description-somos-home;
+  padding: 0 50px;
+  margin-top: 30px;
+  color: var(--GrisOscuro);
+}
+
+.button-somos-home{
+  grid-area: button-somos-home-home;
+  width: 400px;
+  font-family: var(--Font);
+  background-color: var(--VerdeClaro);
+  padding: 10px 60px;
+  font-size: 1em;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin: auto;
+  cursor: pointer;
+}
+
+.picture-somos-home{
+  grid-area: picture-somos-home;
+  width: 100%;
 }
